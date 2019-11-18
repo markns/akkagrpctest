@@ -13,11 +13,11 @@ service DataService {
 // The request message
 message DataRequest {
     string topic = 1;
-    repeated string columns = 2;
-    repeated int32 keys = 3;
+    repeated string column = 2;
+    repeated int32 key = 3;
 }
 
 // The response message
 message RowSet {
-    repeated string values = 1;
+    repeated string value = 1;
 }
